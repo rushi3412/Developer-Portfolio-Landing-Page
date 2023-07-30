@@ -1,1 +1,257 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.navbar a img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Main Intro */
+.image-section {
+  height: 100vh;
+  background-color: #007bff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.intro-text h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  animation: floatAnimation 3s ease infinite alternate;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.intro-text h4 {
+  font-size: 1.5rem;
+  animation: floatAnimation 3s ease infinite alternate-reverse;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Black Box Section */
+.blackBox {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+}
+
+.blackBox h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Experience, Education, Projects, and Social Media Sections */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Experience Section */
+#experience {
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.experience-wrapper {
+  border: 3px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.experience-item {
+  margin-bottom: 20px;
+}
+
+.experience-item h3 {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.experience-item p {
+  margin-bottom: 5px;
+}
+
+/* Education Section */
+#education {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+#education .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#education h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.education-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.education-item h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.education-item p {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.education-item:hover {
+  transform: translateX(-5px);
+}
+
+/* Projects Section */
+#projects {
+  background-color: #f7f7f7;
+  padding: 40px 0;
+}
+
+#projects h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: #1abc9c;
+  color: #333;
+  border: 4px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-body {
+  padding: 30px;
+  margin-bottom: 40px;
+  color: #ddd;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #333;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+/* CSS for Social Media Images */
+.social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#social-media {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-links img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
 
